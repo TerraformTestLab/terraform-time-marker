@@ -11,7 +11,6 @@ provider "time" {}
 
 # Generate a rotating resource based on time
 resource "time_rotating" "unique_rotator" {
-  rotation_days    = 0
   rotation_minutes = 1
 }
 
