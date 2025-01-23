@@ -1,4 +1,11 @@
 terraform {
+  cloud {
+    organization = "SujaysTerraformLab"
+    workspaces {
+      name = "terraform-time-marker"
+    }
+  }
+
   required_providers {
     time = {
       source  = "hashicorp/time"
